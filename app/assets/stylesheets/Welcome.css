@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: SansSerif;
+    padding: 8px;
+    background: #b6a8a8;
+}
+
+/*Evoco lable*/
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #b6a8a8;
+}
+
+.header h1 {
+    font-size: 60px;
+
+
+}
+.topnav {
+    overflow: hidden;
+    background-color: #06680b;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header h2 {
+    font-size: 80px;
+    color:#06680b;
+}
+
+
+
+
+
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
