@@ -7,14 +7,21 @@ class ForumsController < ApplicationController
         @forum = Forum.find(params[:id])
     end
     
+    def new
+        @forum = Forum.new
+    end
+    
     def forum
     end
     
     def create
-    @forum = Forum.new(forum_params)
+        @forum = Forum.new(forum_params)
     
-    @forum.save
-    redirect_to @forum
+        if @forum.save
+            redirect_to @forum
+        else
+            render 'new'
+        end
     end
 end
 
