@@ -111,20 +111,23 @@
     <a href="homepage.html" style="float:right">Home</a>
 </div>
 
-<div class="row">
-    <div class="leftcolumn">
-        <div class="card">
+<h1>Listing articles</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @forum.each do |forum| %>
+    <tr>
+      <td><%= forum.title %></td>
+      <td><%= forum.text %></td>
+      <td><%= link_to 'Show', forum_path(forum) %></td>
+    </tr>
+  <% end %>
+</table>
 
-        </div>
-        <div class="card">
-
-        </div>
-    </div>
-
-
-
-    </div>
-</div>
 
 <div class="footer">
     <h2>Group 19 3155 2020</h2>
