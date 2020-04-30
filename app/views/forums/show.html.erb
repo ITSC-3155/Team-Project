@@ -7,4 +7,31 @@
     <Strong>Text:</Strong>
     <%= @forum.text %>
 </p>
+<h2>Comments</h2>
+<% @forum.comments.each do |comments| %>
+    <p>
+        <strong>Commenter:</strong>
+        <%= comments.commenter %>
+    </p>
+    
+    <p>
+        <strong>Comment:</strong>
+        <%= comments.body %>
+    </p>
+<% end %>
+
+<h2>Add a comment:</h2>
+<%= form_for([@forum, @forum.comments.build]) do |f| %>
+    <p>
+        <%= f.label :commenter %><br>
+        <%= f.text_field :commenter %>
+    </p>
+    <p>
+        <%= f.label :body %><br>
+        <%= f.text_area :body %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>
 <%= link_to 'Forum List', forums_path %>

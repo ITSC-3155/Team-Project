@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
+  resources :forums do
+    resources :comments
+  end
+
   resources :homepage
   resources :recommended
   resources :forums
