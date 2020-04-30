@@ -18,6 +18,12 @@
         <strong>Comment:</strong>
         <%= comments.body %>
     </p>
+    
+    <p>
+        <%= link_to 'Destory Comment', [comments.forum, comments],
+                                        method: :delete,
+                                        data: { confirm: 'Are you sure?' } %>
+    </p>
 <% end %>
 
 <h2>Add a comment:</h2>
