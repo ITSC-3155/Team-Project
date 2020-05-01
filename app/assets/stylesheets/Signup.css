@@ -7,7 +7,13 @@ body {
     font-family: SansSerif;
     padding: 8px;
     background: #b6a8a8;
+
+    text-align: center;
 }
+form {
+    display: inline-block;
+}
+
 
 /* Header/Blog Title */
 .header {
