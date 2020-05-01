@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
-    <link rel="stylesheet" href="Signup.css">
+    <link rel="stylesheet" href="Welcome.css">
 </head>
 <body>
 <div class="header">
@@ -11,7 +11,8 @@
     <p>Find the computer that best suits your needs.</p>
 </div>
 <div class="topnav">
-    <a href="Signup.html">Sign up</a>
+<a href="Signup.html">Sign up</a>
+
 
 </div>
 <div class="container">
@@ -23,23 +24,19 @@
                         <div class="form-group">
                             <h2 class="h3 mb-3 font-weight-heavy">Welcome back user! Please Log in.</h2>
                             <div class="form-group">
-                                <input type="text" id="inputFName" name= "firstName" class="form-control" placeholder="First name" required>
+                                <input type="email" id="inputEmail" name = "email" class="form-control" placeholder="Email address" required autofocus>
                             </div><br>
-                            <div class="form-group">
-                                <input type="text" id="inputLName" name = "lastName" class="form-control" placeholder="Last name" required>
+                                <input type="password" id="inputPassword" name= "password" class="form-control" placeholder="Password" required>
                             </div><br>
-                            <input type="email" id="inputEmail" name = "email" class="form-control" placeholder="Email address" required autofocus>
-                        </div><br>
-                        <div class="form-group">
-                            <input type="password" id="inputPassword" name= "password" class="form-control" placeholder="Password" required>
-                        </div><br>
-                        <input type="password" id="inputCPassword" name = "passwordConfirm" class="form-control" placeholder="Confirm Password" required><br><br>
 
 
-
-                        <button type="button" id="sendlogin" class="btn btn-primary">Sign Up</button>
+                        <button type="button" id="sendlogin" class="btn btn-primary">Login</button>
                     </form>
-                </div>
+                </div> <br>
+                <p> Just want to browse? That's fine press enter to continue.</p>
+                <form action="homepage.html">
+                    <button type="submit">Continue</button>
+                </form>
             </div>
         </div>
     </div>
@@ -50,3 +47,4 @@
 
 </body>
 </html>
+
