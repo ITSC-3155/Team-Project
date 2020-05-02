@@ -111,18 +111,16 @@
     <a href="homepage.html" style="float:right">Home</a>
 </div>
 
-<h1>Listing articles</h1>
- <%= link_to 'New article', new_forum_path %>
+<h1>Forum Posts</h1>
+ <%= link_to 'New post', new_forum_path %>
 <table>
   <tr>
     <th>Title</th>
-    <th>Text</th>
   </tr>
  
   <% @forums.each do |forum| %>
     <tr>
       <td><%= forum.title %></td>
-      <td><%= forum.text %></td>
       <td><%= link_to 'Show', forum_path(forum) %></td>
       <td><%= link_to 'Edit', edit_forum_path(forum) %></td>
       <td><%= link_to 'Destroy',
